@@ -8,10 +8,16 @@
   z-index: 1;
   border-bottom: 1px solid $border-primary;
 
-.columns{
-  height: 100%;
-}
+  .columns{
+    height: 100%;
+  }
 
+  li.header-menu-item{
+
+    &.has-dropdown a, &.active a, a{
+      padding: rem-calc(0 20) !important;
+    }
+  }
   .top-bar{
     .header-logo-container, .header-menu-container{
       padding: 0px 100px;
@@ -38,7 +44,7 @@
               -webkit-transition: color .3s ease-out;
 
               &:hover, &.active{
-                color: #0699d4;
+                color: $primary-color;
               }
             }
           }
@@ -66,10 +72,10 @@
 
 .footer{
   position: relative;
+  font-family: 'Ropa Sans', sans-serif;
   background-color: $bg-footer;
-  color: $font-secondary;
-  min-height: rem-calc(200);
-  padding-bottom: rem-calc(50);
+  min-height: rem-calc(150);
+  text-transform: uppercase;
 
   .footer-container{
     height: 100%;
@@ -78,11 +84,30 @@
 
     .company-details{
       line-height: rem-calc(20);
+      color: $font-footer;
+    }
+
+    .social-icons{
+      i{
+        padding: rem-calc(10 20);
+
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
     }
 
     .designed-by{
       position: relative;
       top: rem-calc(100);
+    }
+
+    .contact-us-title{
+      color: $font-secondary;
+    }
+
+    .company-email{
+      text-transform: lowercase;
     }
   }
 }
