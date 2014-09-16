@@ -19,3 +19,26 @@
     height: 100%;
   }
 }
+
+.footer{
+  position: relative;
+  background-color: $bg-footer;
+  color: $font-secondary;
+  min-height: rem-calc(200);
+  padding-bottom: rem-calc(50);
+
+  .footer-container{
+    height: 100%;
+    width: 80%;
+    margin: 50px auto;
+
+    .company-details{
+      line-height: rem-calc(20);
+    }
+
+    .designed-by{
+      position: relative;
+      top: rem-calc(100);
+    }
+  }
+}

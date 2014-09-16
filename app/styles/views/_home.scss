@@ -71,33 +71,3 @@
     }
 }
 
-.bcg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height: 100%;
-    width: 100%;
-}
-
-.hsContainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-
-
-#slide-1 .bcg{
-    background: url('../images/1.JPG');
-}
-#slide-2 .bcg{
-    background-color: blue;
-}
-#slide-3 .bcg{
-    background-color: green;
-}
-#slide-4 .bcg{
-    background-color: yellow;
-}
