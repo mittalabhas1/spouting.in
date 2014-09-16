@@ -1,15 +1,10 @@
-/*
-*
-*   Main SCSS file. Includes all other files.
-*
-*/
-
+// Main SCSS file. Includes all other files.
 
 // Foundation
 @import "foundation/_foundation";
 
-
 // Global
+@import "global/_theme";
 @import "global/_global";
 
 // Views

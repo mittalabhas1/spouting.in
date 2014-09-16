@@ -20,8 +20,23 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section id="slide-1" class="cover-slide">
-            <div class="cover-bg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+        <section id="slide-1" class="details-slide">
+            <div class="details-bg">
+                <div class="details-container">
+                    <div class="details-content"
+                data-anchor-target=".details-content .content">
+                        <div class="content">
+                            <div>
+                            	<img src="images/logo.png" class="header-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-2" class="cover-slide">
+            <div class="cover-bg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-2">
                 <div class="cover-container">
                     <div class="cover-content" data-center="left: 200px; opacity: 1"
                 data-top="left: 0px; opacity: 0"
@@ -39,10 +54,10 @@
                 </div>
             </div>
         </section>
-        <section id="slide-2" class="details-slide">
+        <section id="slide-3" class="details-slide">
             <div class="details-bg">
                 <div class="details-container">
-                    <div class="details-content" data-center="right: 200px"
+                    <div class="details-content"
                 data-center-top="right: 0"
                 data--100-bottom="opacity: 0;"
                 data-anchor-target=".details-content .content">
@@ -59,11 +74,11 @@
                 </div>
             </div>
         </section>
-        <section id="slide-3" class="cover-slide">
+        <section id="slide-4" class="cover-slide">
             <div class="cover-bg-second .second" data-center="background-position: 50% 0px;"
         data-top-bottom="background-position: 50% -100px;"
         data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-3">
+        data-anchor-target="#slide-4">
                 <div class="cover-container">
                     <div class="cover-content" data-center="left: 200px; opacity: 1"
                 data-top="left: 0px; opacity: 0"
@@ -81,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section id="slide-4" class="homeSlide">
+        <section id="slide-5" class="homeSlide">
             <div class="bcg">
                 <div class="hsContainer">
                     <div class="hsContent">
@@ -108,14 +123,14 @@
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <!-- <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script> -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>

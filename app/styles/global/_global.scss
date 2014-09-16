@@ -1,22 +1,27 @@
 /*
-*
 *   Global classes file
 *   Author: vam$hi and @bhas
 */
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
 }
 
 body, html{
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.header-logo{
+  height: 10vh;
 }
