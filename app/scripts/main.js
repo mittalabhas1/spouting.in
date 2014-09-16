@@ -1,4 +1,6 @@
-var s = skrollr.init();
+var s = skrollr.init({
+    // forceHeight: false
+});
 
 // Refresh Skrollr after resizing our sections
-s.refresh($('.homeSlide'));
+s.refresh($('.cover-slide'));
