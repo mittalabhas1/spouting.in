@@ -12,6 +12,8 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <link href='http://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -20,9 +22,49 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="row header">
-          <div class="small-4 columns"><img src="images/logo.png" alt="Spouting.in" class="header-logo"></div>
-          <div class="small-8 columns"></div>
+        <div class="header fixed">
+          <!-- <div class="small-4 columns text-right header-logo-container">
+            <img src="images/logo.png" alt="Spouting.in" class="header-logo">
+          </div>
+          <div class="small-8 columns header-menu-container">
+          </div> -->
+          <nav class="top-bar" data-topbar role="navigation">
+            <div class="small-4 columns text-right header-logo-container">
+                <img src="images/logo.png" alt="Spouting.in" class="header-logo">
+            </div>
+            <div class="small-8 columns header-menu-container">
+              <section class="top-bar-section header-menu">
+              <!-- Right Nav Section -->
+              <ul class="right header-menu-list">
+                <li class="header-menu-item active"><a href="#">Home</a></li>
+                <li class="header-menu-item has-dropdown">
+                  <a href="#">Our Products</a>
+                  <ul class="dropdown">
+                    <li class="header-menu-sub-item"><a href="#">Product I Product I</a></li>
+                    <li class="header-menu-sub-item active"><a href="#">Product II</a></li>
+                    <li class="header-menu-sub-item"><a href="#">Product III</a></li>
+                    <li class="header-menu-sub-item has-dropdown">
+                      <a href="#">Product IV
+                      <!-- <i class="fa fa-chevron-right right"></i> -->
+                      </a>
+                      <ul class="dropdown">
+                        <li class="header-menu-sub-item active"><a href="#">Product I Product I</a></li>
+                        <li class="header-menu-sub-item"><a href="#">Product II</a></li>
+                        <li class="header-menu-sub-item"><a href="#">Product III</a></li>
+                        <li class="header-menu-sub-item"><a href="#">Product IV</a></li>
+                        <li class="header-menu-sub-item"><a href="#">Product V</a></li>
+                        <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
+                      </ul>
+                    </li>
+                    <li class="header-menu-sub-item"><a href="#">Product V</a></li>
+                    <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          </nav>
         </div>
 
         <section id="slide-1" class="cover-slide">
@@ -32,7 +74,7 @@
                 data-top="left: 0px;"
                 data-anchor-target=".cover-container .content">
                         <div class="content">
-                          <h1>'Allo, 'Allo!</h1>
+                          <h1><!-- <i class="fa fa-chevron-right right"></i> --></h1>
                           <p>You now have</p>
                           <ul>
                             <li>HTML5 Boilerplate</li>

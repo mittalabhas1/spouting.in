@@ -1120,40 +1120,41 @@ $crumb-slash: "|";
 // TOP BAR
 //
 
-// $include-html-top-bar-classes: $include-html-classes;
+$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: rgba(255,255,255,0.98);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
-// $topbar-margin-bottom: 0;
+$topbar-height: 70px;
+$topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+// $topbar-dropdown-bg: rgba(255,255,255,0.95);
+// $topbar-dropdown-link-color: #333;
+// $topbar-dropdown-link-bg: transparent;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-color-active-hover: #fff;
+// $topbar-link-color: #333;
+// $topbar-link-color-hover: $primary-color;
+// $topbar-link-color-active: $primary-color;
+// $topbar-link-color-active-hover: $primary-color;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727  ;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+// $topbar-link-bg: transparent;
+// $topbar-link-bg-hover: #ABCABC;
+// $topbar-link-bg-active: transparent;
+// $topbar-link-bg-active-hover: transparent;
 // $topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;
@@ -1165,7 +1166,7 @@ $crumb-slash: "|";
 // $topbar-dropdown-label-bg: #333;
 
 // Top menu icon styles
-// $topbar-menu-link-transform: uppercase;
+$topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
