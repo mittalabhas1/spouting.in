@@ -15,7 +15,7 @@
     background-image: url('../images/3.jpg');
     background-position: center center;
     background-repeat: none;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 
     .cover-container{
       position: relative;
@@ -62,7 +62,7 @@
     background-image: url('../images/2.jpg');
     background-position: center center;
     background-repeat: none;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 
     .cover-container{
       position: relative;
@@ -92,6 +92,25 @@
         position: relative;
         height: 100%;
         width: 100%;
+
+        .company-description{
+          font-family: 'Ropa Sans', sans-serif;
+          text-align: justify;
+          padding-top: rem-calc(100);
+          color: $font-primary;
+          font-size: rem-calc(18);
+          letter-spacing: rem-calc(2);
+          word-spacing: rem-calc(4);
+
+          .mmc-logo{
+            background: rgba(0,0,0,0.5);
+            padding: rem-calc(35 0);
+          }
+
+          .columns:last-child{
+            float: left;
+          }
+        }
     }
   }
 }
