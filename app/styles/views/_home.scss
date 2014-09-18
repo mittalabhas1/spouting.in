@@ -80,7 +80,7 @@
 .details-slide{
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 300px;
 
   .details-bg{
     position:relative;
@@ -94,19 +94,27 @@
         width: 100%;
 
         .company-description{
-          font-family: 'Ropa Sans', sans-serif;
+          font-family: 'Oswald', sans-serif;
           text-align: justify;
-          padding-top: rem-calc(100);
+          padding: rem-calc(65 0);
           color: $font-primary;
           font-size: rem-calc(18);
           letter-spacing: rem-calc(2);
           word-spacing: rem-calc(4);
+          color: #777777;
 
           .mmc-logo{
             background: rgba(0,0,0,0.5);
             padding: rem-calc(35 0);
           }
 
+          .mmc-content{
+            padding: rem-calc(30 50);
+
+            b{
+              color: #555;
+            }
+          }
           .columns:last-child{
             float: left;
           }
