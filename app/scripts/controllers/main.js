@@ -1,3 +1,7 @@
+/*
+ * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
+*/
+
 'use strict';
 
 /**
@@ -8,10 +12,6 @@
  * Controller of the spoutinginApp
  */
 angular.module('spoutinginApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('HomeCtrl', function ($scope) {
+
   });

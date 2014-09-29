@@ -1,4 +1,18 @@
+/*
+ * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
+*/
+
 // Main SCSS file. Includes all other files.
 
 // Foundation
 @import "foundation/_foundation";
+
+// Global
+@import "global/_typography";
+@import "global/_theme";
+@import "global/_global";
+@import "global/_header";
+@import "global/_footer";
+
+// Views
+@import "views/_home";

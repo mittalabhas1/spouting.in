@@ -12,6 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Ropa+Sans|Exo:500|Oswald:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -20,23 +21,75 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">spoutingin</h3>
-      </div>
+    <!-- Header Starts Here-->
+    <div class="header fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+        <div class="small-4 columns text-right header-logo-container">
+          <img src="images/logo.png" alt="Spouting.in" class="header-logo">
+        </div>
+        <div class="small-8 columns header-menu-container">
+          <section class="top-bar-section header-menu">
+          <!-- Right Nav Section -->
+            <ul class="right header-menu-list">
+              <li class="header-menu-item active"><a href="#">Home</a></li>
+              <li class="header-menu-item active"><a href="#">About Us</a></li>
+              <li class="header-menu-item has-dropdown">
+                <a href="#">Our Products</a>
+                <ul class="dropdown">
+                  <li class="header-menu-sub-item"><a href="#">Product I Product I</a></li>
+                  <li class="header-menu-sub-item active"><a href="#">Product II</a></li>
+                  <li class="header-menu-sub-item"><a href="#">Product III</a></li>
+                  <li class="header-menu-sub-item has-dropdown">
+                    <a href="#">Product IV</a>
+                    <ul class="dropdown">
+                      <li class="header-menu-sub-item active"><a href="#">Product I</a></li>
+                      <li class="header-menu-sub-item"><a href="#">Product II</a></li>
+                      <li class="header-menu-sub-item"><a href="#">Product III</a></li>
+                      <li class="header-menu-sub-item"><a href="#">Product IV</a></li>
+                      <li class="header-menu-sub-item"><a href="#">Product V</a></li>
+                      <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-menu-sub-item"><a href="#">Product V</a></li>
+                  <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
+                </ul>
+              </li>
+              <li class="header-menu-item active"><a href="http://mmconsultancy.in/">M.M. Consultancy</a></li>
+              <li class="header-menu-item active"><a href="#">Contact Us</a></li>
+            </ul>
+          </section>
+        </div>
+      </nav>
+    </div>
+    <!-- Header Ends Here-->
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    <!-- Content Starts Here-->
+    <div class="container" ui-view></div>
+    <!-- Content Ends Here-->
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <!-- Footer Starts Here-->
+    <div class="row footer" data-bottom-bottom="bottom: 0;">
+      <div class="footer-container">
+        <div class="small-5 columns text-left company-details">
+          <!-- <div class="company-name">M.M.Consultancy Pvt. Ltd.</div> -->
+          <div class="company-phone"><span class="contact-us-title">Contact Us:</span>&nbsp;+91-7272-406237, 401917, +91-98933-45750</div>
+          <div class="company-address">131 Industrial Area II, A.B.Road, Dewas (MP) - 455001</div>
+          <div class="company-email"><a href="mailto:spouting.in@gmail.com">spouting.in@gmail.com</a></div>
+        </div>
+
+        <div class="small-2 columns text-center company-details social-icons">
+          <i class="fa fa-facebook fa-2x"></i>
+          <i class="fa fa-youtube fa-2x"></i>
+          <i class="fa fa-google-plus fa-2x"></i>
+        </div>
+
+        <div class="small-5 columns text-right company-details">
+          <div class="copyright">&copy;&nbsp; 2014 M.M.Consultancy Pvt. Ltd.</div>
+          <div class="company-phone"><span class="contact-us-title">Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank">Abhas Mittal</a> &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a></div>
+        </div>
       </div>
     </div>
+    <!-- Footer Ends Here-->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
