@@ -15,6 +15,7 @@ angular.module('spoutinginApp')
   .controller('AppCtrl', ['$scope', '$rootScope' , function ($scope, $rootScope) {
 
     $rootScope.global = {};
+
     $rootScope.global.products = {
       'category': [
         {

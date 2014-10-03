@@ -34,9 +34,9 @@
               <li class="header-menu-item active"><a href="#">Home</a></li>
               <li class="header-menu-item active"><a href="#">About Us</a></li>
               <li class="header-menu-item has-dropdown">
-                <a href="#">Our Products</a>
+                <a ui-sref="products">Our Products</a>
                 <ul class="dropdown">
-                  <li class="header-menu-sub-item" ng-repeat="category in global.products.category"><a href="#">{{category.name}}</a></li>
+                  <li class="header-menu-sub-item" ng-repeat="category in global.products.category"><a ui-sref="products">{{category.name}}</a></li>
                   <!-- <li class="header-menu-sub-item has-dropdown">
                     <a href="#">Product IV</a>
                     <ul class="dropdown">

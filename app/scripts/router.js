@@ -32,5 +32,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: "/",
       templateUrl: "views/home.html",
       controller: 'HomeCtrl'
+    })
+    .state('products', {
+      url: "/our-products/:categoryId/:productId",
+      params: {
+        categoryId: { value: null },
+        productId: { value: null }
+      },
+      templateUrl: "views/products.html",
+      controller: 'ProductCtrl'
     });
 });
