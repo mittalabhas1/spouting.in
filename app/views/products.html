@@ -2,13 +2,21 @@
   <div class="small-4 columns product-nav">
     <ul class="side-nav" role="navigation">
       <p>Our Products</p>
-      <li role="menuitem" ng-repeat="category in global.products.category">{{category.name}}</li>
+      <li role="menuitem" ng-repeat="category in global.products.category">
+        <a ui-sref="products({categoryId: category.keyword})">{{category.name}}</a>
+      </li>
      </ul>
   </div>
 
   <div class="small-8 columns product-description">
     <div class="row category-type" ng-repeat="category in global.products.category">
-      {{category.name}}
+      <div class="row category-name">{{category.name}}</div>
+      <div class="row category-description">
+        <div class="small-3 columns">
+          <img src="sdf.jpg" alt="sdfs">
+        </div>
+        <div class="small-9 columns">Category Description</div>
+      </div>
     </div>
   </div>
 

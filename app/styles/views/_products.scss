@@ -6,6 +6,7 @@
     border-radius: rem-calc(5);
     box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
     padding-left: rem-calc(20);
+    font-family: 'Exo', sans-serif;
 
     p{
       margin-bottom: rem-calc(5);
@@ -17,6 +18,36 @@
       margin-bottom: 0;
       line-height: rem-calc(18);
       text-transform: capitalize;
+
+      a{
+        color: $font-primary;
+      }
+    }
+  }
+}
+
+.product-description{
+  .category-type{
+    margin-top: rem-calc(20);
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    .category-name{
+      font-family: 'Exo', sans-serif;
+      border-bottom: 1px solid $border-primary;
+      padding: rem-calc(10 20);
+      text-transform: uppercase;
+      margin-bottom: rem-calc(10);
+    }
+
+    .category-description{
+      font-family: 'Oswald', sans-serif;
+
+      img{
+        width: 100%;
+      }
     }
   }
 }
