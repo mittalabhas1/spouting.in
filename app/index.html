@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="spoutinginApp">
+  <body ng-app="spoutinginApp" ng-controller="AppCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,10 +36,8 @@
               <li class="header-menu-item has-dropdown">
                 <a href="#">Our Products</a>
                 <ul class="dropdown">
-                  <li class="header-menu-sub-item"><a href="#">Product I Product I</a></li>
-                  <li class="header-menu-sub-item active"><a href="#">Product II</a></li>
-                  <li class="header-menu-sub-item"><a href="#">Product III</a></li>
-                  <li class="header-menu-sub-item has-dropdown">
+                  <li class="header-menu-sub-item" ng-repeat="category in global.products.category"><a href="#">{{category.name}}</a></li>
+                  <!-- <li class="header-menu-sub-item has-dropdown">
                     <a href="#">Product IV</a>
                     <ul class="dropdown">
                       <li class="header-menu-sub-item active"><a href="#">Product I</a></li>
@@ -49,9 +47,7 @@
                       <li class="header-menu-sub-item"><a href="#">Product V</a></li>
                       <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
                     </ul>
-                  </li>
-                  <li class="header-menu-sub-item"><a href="#">Product V</a></li>
-                  <li class="header-menu-sub-item"><a href="#">Product VI</a></li>
+                  </li> -->
                 </ul>
               </li>
               <li class="header-menu-item active"><a href="http://mmconsultancy.in/">M.M. Consultancy</a></li>
@@ -93,7 +89,7 @@
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
+     <!-- <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -101,7 +97,7 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -126,10 +122,11 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
+        <script src="scripts/router.js"></script>
         <script src="scripts/skrollr-settings.js"></script>
 
         <!-- Controllers -->
+        <script src="scripts/controllers/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>

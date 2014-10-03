@@ -6,12 +6,14 @@
 
 /**
  * @ngdoc function
- * @name spoutinginApp.controller:MainCtrl
+ * @name spoutinginApp.controller:HomeCtrl
  * @description
- * # MainCtrl
+ * # HomeCtrl
  * Controller of the spoutinginApp
  */
 angular.module('spoutinginApp')
-  .controller('HomeCtrl', function ($scope) {
+  .controller('HomeCtrl', ['$scope', function ($scope) {
 
-  });
+    $scope.temps = {};
+
+  }]);
