@@ -1,0 +1,15 @@
+<div class="small-10 small-centered columns">
+  <div class="small-4 columns product-nav">
+    <ul class="side-nav" role="navigation">
+      <p>Our Products</p>
+      <li role="menuitem" ng-repeat="category in global.products.category">{{category.name}}</li>
+     </ul>
+  </div>
+
+  <div class="small-8 columns product-description">
+    <div class="row category-type" ng-repeat="category in global.products.category">
+      {{category.name}}
+    </div>
+  </div>
+
+</div>

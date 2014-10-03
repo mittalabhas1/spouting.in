@@ -1,0 +1,22 @@
+.product-nav{
+  .side-nav{
+    width: 50%;
+    margin: auto;
+    border: 1px solid $border-primary;
+    border-radius: rem-calc(5);
+    box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
+    padding-left: rem-calc(20);
+
+    p{
+      margin-bottom: rem-calc(5);
+      text-transform: uppercase;
+    }
+
+    li{
+      list-style-type: disc;
+      margin-bottom: 0;
+      line-height: rem-calc(18);
+      text-transform: capitalize;
+    }
+  }
+}
