@@ -28,25 +28,21 @@
 
 .product-description{
   .category-type{
-    margin-top: rem-calc(20);
+    li{
+      position: relative;
+      height: rem-calc(262);
+      border: 1px solid $border-primary;
+      padding: 0;
+      cursor: pointer;
 
-    &:first-child{
-      margin-top: 0;
-    }
-
-    .category-name{
-      font-family: 'Exo', sans-serif;
-      border-bottom: 1px solid $border-primary;
-      padding: rem-calc(10 20);
-      text-transform: uppercase;
-      margin-bottom: rem-calc(10);
-    }
-
-    .category-description{
-      font-family: 'Oswald', sans-serif;
-
-      img{
-        width: 100%;
+      .category-name{
+        position: absolute;
+        bottom: 0;
+        font-family: 'Exo', sans-serif;
+        text-transform: uppercase;
+        background: rgba(0,0,0,0.7);
+        padding: rem-calc(10);
+        color: $font-primary;
       }
     }
   }

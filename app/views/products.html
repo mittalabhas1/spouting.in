@@ -9,15 +9,12 @@
   </div>
 
   <div class="small-8 columns product-description">
-    <div class="row category-type" ng-repeat="category in global.products.category">
-      <div class="row category-name">{{category.name}}</div>
-      <div class="row category-description">
-        <div class="small-3 columns">
-          <img src="sdf.jpg" alt="sdfs">
-        </div>
-        <div class="small-9 columns">Category Description</div>
-      </div>
-    </div>
+    <ul class="small-block-grid-3 category-type">
+      <li ng-repeat="category in global.products.category" ui-sref="products({categoryId: category.keyword})">
+        <img src="" alt="">
+        <div class="row category-name">{{category.name}}</div>
+      </li>
+    </ul>
   </div>
 
 </div>
