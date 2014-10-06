@@ -12,8 +12,25 @@
  * Controller of the spoutinginApp
  */
 angular.module('spoutinginApp')
-  .controller('ProductCtrl', ['$scope', function ($scope) {
+  .controller('ProductCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
 
     $scope.temps = {};
+
+    var init = function(){
+      if($stateParams.categoryId !== null){
+        if($stateParams.productId !== null){
+          $scope.show = 'product';
+          $scope.temps.category = $stateParams.categoryId;
+          $scope.temps.product = $stateParams.productId;
+        } else{
+          $scope.show = 'category';
+          $scope.temps.category = $stateParams.categoryId;
+        }
+      } else{
+        $scope.show = 'all';
+      }
+    };
+
+    init();
 
   }]);

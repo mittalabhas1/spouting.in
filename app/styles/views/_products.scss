@@ -1,6 +1,6 @@
 .product-nav{
   .side-nav{
-    width: 50%;
+    width: 70%;
     margin: auto;
     border: 1px solid $border-primary;
     border-radius: rem-calc(5);
@@ -31,9 +31,25 @@
     li{
       position: relative;
       height: rem-calc(262);
-      border: 1px solid $border-primary;
+      // border: 1px solid $border-primary;
       padding: 0;
       cursor: pointer;
+
+      &.perforated-sheets, &.elevator-and-conveyor-spares, &.spouting, &.pulse-jet-bag-filter-accessories, &.miscellaneous, &.knobs-and-handles{
+        background-size: 100% 100%;
+      }
+
+      &.pneumatic-accessories{
+        background-size: 300% 150%;
+      }
+
+      &.driving-elements, &.spouting{
+        background-size: 150% 100%;
+      }
+
+      &.product-image{
+        background-size: 100% 100%;
+      }
 
       .category-name{
         position: absolute;
@@ -42,7 +58,7 @@
         text-transform: uppercase;
         background: rgba(0,0,0,0.7);
         padding: rem-calc(10);
-        color: $font-primary;
+        color: $font-secondary;
       }
     }
   }
