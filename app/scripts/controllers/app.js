@@ -59,58 +59,58 @@ angular.module('spoutinginApp')
         'name': 'Plantsifter Accessories',
         'products': [
           {
-            'name': 'Cotton Pads',
-            'keyword': 'Cotton Pads',
+            'name': 'Cotton Pad',
+            'keyword': 'cotton-pad',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Namda Roll',
-            'keyword': 'Namda Roll',
+            'keyword': 'namda-roll',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Rubber Ring',
-            'keyword': 'Rubber Ring',
+            'keyword': 'rubber-ring',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Paper Tape',
-            'keyword': 'Paper Tape',
+            'keyword': 'paper-tape',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Plantsifter Box',
-            'keyword': 'Plantsifter Box',
+            'keyword': 'plantsifter-box',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Plantsifter Bag',
-            'keyword': 'Plantsifter Bag',
+            'keyword': 'plantsifter-bag',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Plantsifter Frame',
-            'keyword': 'Plantsifter Frame',
+            'keyword': 'plantsifter-frame',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Plantsifter Oval Ball (Dholak)',
-            'keyword': 'Plantsifter Oval Ball (Dholak)',
+            'keyword': 'plantsifter-oval-ball-dholak',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Separator Ball',
-            'keyword': 'Separator Ball',
+            'keyword': 'separator-ball',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Staple Gun',
-            'keyword': 'Staple Gun',
+            'keyword': 'staple-gun',
             'description': 'dsfsdfsdfsdf'
-          },,
+          },
           {
             'name': 'Triangular Brush',
-            'keyword': 'Triangular Brush',
+            'keyword': 'triangular-brush',
             'description': 'dsfsdfsdfsdf'
           },
         ],
@@ -120,32 +120,32 @@ angular.module('spoutinginApp')
         'products': [
           {
             'name': 'Round Hole Type',
-            'keyword': 'Round Hole Type',
+            'keyword': 'round-hole-type',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Rectangular Hole Type',
-            'keyword': 'Rectangular Hole Type',
+            'keyword': 'rectangular-hole-type',
             'description': 'dsfsdfsdfsdf'
           },
           {
-            'name': 'Sloted Hole Type',
-            'keyword': 'Sloted Hole Type',
+            'name': 'Slotted Hole Type',
+            'keyword': 'slotted-hole-type',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Dimple Type',
-            'keyword': 'Dimple Type',
+            'keyword': 'dimple-type',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Triangular Hole Type',
-            'keyword': 'Triangular Hole Type',
+            'keyword': 'triangular-hole-type',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Stainless Steel Wire Mesh',
-            'keyword': 'Stainless Steel Wire Mesh',
+            'keyword': 'stainless-steel-wire-mesh',
             'description': 'dsfsdfsdfsdf'
           },
         ],
@@ -155,32 +155,32 @@ angular.module('spoutinginApp')
         'products': [
           {
             'name': 'Air Lock',
-            'keyword': 'Air Lock',
+            'keyword': 'air-lock',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Acrylic Glass',
-            'keyword': 'Acrylic Glass',
+            'keyword': 'acrylic-glass',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Lift Pipe',
-            'keyword': 'Lift Pipe',
+            'keyword': 'lift-pipe',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Lift Bend',
-            'keyword': 'Lift Bend',
+            'keyword': 'lift-bend',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Rubber Sleeve',
-            'keyword': 'Rubber Sleeve',
+            'keyword': 'rubber-sleeve',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Pneumatic Cyclone',
-            'keyword': 'Pneumatic Cyclone',
+            'keyword': 'pneumatic-cyclone',
             'description': 'dsfsdfsdfsdf'
           },
         ],
@@ -190,92 +190,92 @@ angular.module('spoutinginApp')
         'products': [
           {
             'name': 'Pipe',
-            'keyword': 'Pipe',
+            'keyword': 'pipe',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Divider',
-            'keyword': 'Divider',
+            'keyword': 'divider',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Inspection (T)',
-            'keyword': 'Inspection (T)',
+            'keyword': 'inspection-t',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Elbow',
-            'keyword': 'Elbow',
+            'keyword': 'elbow',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Pipe Segment',
-            'keyword': 'Pipe Segment',
+            'keyword': 'pipe-segment',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Universal Bend',
-            'keyword': 'Universal Bend',
+            'keyword': 'universal-bend',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Branch Pipe (Y)',
-            'keyword': 'Branch Pipe (Y)',
+            'keyword': 'branch-pipe-y',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Inspection with Hinged Door',
-            'keyword': 'Inspection with Hinged Door',
+            'keyword': 'inspection-with-hinged-door',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Sleeve',
-            'keyword': 'Sleeve',
+            'keyword': 'sleeve',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Bend 90 Degree',
-            'keyword': 'Bend 90 Degree',
+            'keyword': 'bend-90-degree',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Tension Ring',
-            'keyword': 'Tension Ring',
+            'keyword': 'tension-ring',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Bagging Spout',
-            'keyword': 'Bagging Spout',
+            'keyword': 'bagging-spout',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Bag Clamps',
-            'keyword': 'Bag Clamps',
+            'keyword': 'bag-clamps',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Dead Box',
-            'keyword': 'Dead Box',
+            'keyword': 'dead-box',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'View Glass',
-            'keyword': 'View Glass',
+            'keyword': 'view-glass',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Tension Ring',
-            'keyword': 'Tension Ring',
+            'keyword': 'tension-ring',
             'description': 'dsfsdfsdfsdf'
           },
           {
-            'name': 'Magnets',
-            'keyword': 'Magnets',
+            'name': 'Magnet',
+            'keyword': 'magnet',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Rotameter',
-            'keyword': 'Rotameter',
+            'keyword': 'rotameter',
             'description': 'dsfsdfsdfsdf'
           },
         ],
@@ -285,87 +285,87 @@ angular.module('spoutinginApp')
         'products': [
           {
             'name': 'Elevator Belting',
-            'keyword': 'Elevator Belting',
+            'keyword': 'elevator-belting',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'MS Buckets',
-            'keyword': 'MS Buckets',
+            'keyword': 'ms-buckets',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'PVC Buckets',
-            'keyword': 'PVC Buckets',
+            'keyword': 'pvc-buckets',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Elevator Bolts',
-            'keyword': 'Elevator Bolts',
+            'keyword': 'elevator-bolts',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Elevator Top',
-            'keyword': 'Elevator Top',
+            'keyword': 'elevator-top',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Elevator Bottom',
-            'keyword': 'Elevator Bottom',
+            'keyword': 'elevator-bottom',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Elevator Box',
-            'keyword': 'Elevator Box',
+            'keyword': 'elevator-box',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Rubberized Pulley',
-            'keyword': 'Rubberized Pulley',
+            'keyword': 'rubberized-pulley',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Bearings',
-            'keyword': 'Bearings',
+            'keyword': 'bearings',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Screw Flights',
-            'keyword': 'Screw Flights',
+            'keyword': 'screw-flights',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Drag Chain Conveyor Links',
-            'keyword': 'Drag Chain Conveyor Links',
+            'keyword': 'drag-chain-conveyor-links',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Conveyor Belting',
-            'keyword': 'Conveyor Belting',
+            'keyword': 'conveyor-belting',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Bush Bearing',
-            'keyword': 'Bush Bearing',
+            'keyword': 'bush-bearing',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Hanger Bearing',
-            'keyword': 'Hanger Bearing',
+            'keyword': 'hanger-bearing',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Conveyor Blades',
-            'keyword': 'Conveyor Blades',
+            'keyword': 'conveyor-blades',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Conveyor Inspection Window Clamps',
-            'keyword': 'Conveyor Inspection Window Clamps',
+            'keyword': 'conveyor-inspection-window-clamps',
             'description': 'dsfsdfsdfsdf'
           },
           {
             'name': 'Idler Roller',
-            'keyword': 'Idler Roller',
+            'keyword': 'idler-roller',
             'description': 'dsfsdfsdfsdf'
           },
         ],

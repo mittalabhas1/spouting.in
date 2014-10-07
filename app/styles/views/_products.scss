@@ -1,7 +1,7 @@
 .product-nav{
   .side-nav{
-    width: 70%;
-    margin: auto;
+    position: fixed;
+    width: rem-calc(250);
     border: 1px solid $border-primary;
     border-radius: rem-calc(5);
     box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
