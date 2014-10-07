@@ -289,8 +289,8 @@ angular.module('spoutinginApp')
             'description': 'dsfsdfsdfsdf'
           },
           {
-            'name': 'MS Buckets',
-            'keyword': 'ms-buckets',
+            'name': 'MS Bucket',
+            'keyword': 'ms-bucket',
             'description': 'dsfsdfsdfsdf'
           },
           {
@@ -299,8 +299,8 @@ angular.module('spoutinginApp')
             'description': 'dsfsdfsdfsdf'
           },
           {
-            'name': 'Elevator Bolts',
-            'keyword': 'elevator-bolts',
+            'name': 'Elevator Bolt',
+            'keyword': 'elevator-bolt',
             'description': 'dsfsdfsdfsdf'
           },
           {
