@@ -1,38 +1,41 @@
-<div class="small-10 small-centered columns">
+<div class="row state-container products-container">
 
-  <div class="small-4 columns product-nav" ng-if="show === 'all'">
-    <ul class="side-nav" role="navigation">
-      <p>Our Products</p>
-      <li role="menuitem" ng-repeat="category in global.products.category">
-        <a ui-sref="products({categoryId: category.keyword})">{{category.name}}</a>
-      </li>
-     </ul>
+  <div class="small-10 small-centered columns">
+
+    <!-- <div class="small-4 columns product-nav" ng-if="show === 'all'">
+      <ul class="side-nav" role="navigation">
+        <p>Our Products</p>
+        <li role="menuitem" ng-repeat="category in global.products.category">
+          <a ui-sref="products({categoryId: category.keyword})">{{category.name}}</a>
+        </li>
+       </ul>
+    </div> -->
+
+    <div class="small-12 columns product-description" ng-if="show === 'all'">
+      <ul class="small-block-grid-4 category-type">
+        <li ng-repeat="category in global.products.category" ui-sref="products({categoryId: category.keyword})" style="background-image: url(images/category/{{category.keyword}}.jpg); background-position: 50%; background-repeat: no-repeat;" ng-class="category.keyword">
+  <!--         <img ng-src="images/category/{{category.keyword}}.jpg" alt=""> -->
+          <div class="row category-name">{{category.name}}</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="small-4 columns product-nav" ng-if="show === 'category'">
+      <ul class="side-nav" role="navigation">
+        <p>{{global.products[temps.category].name}}</p>
+        <li role="menuitem" ng-repeat="product in global.products[temps.category].products">
+          <a ui-sref="products({categoryId: temps.category, productId: product.keyword})">{{product.name}}</a>
+        </li>
+       </ul>
+    </div>
+
+    <div class="small-8 columns product-description" ng-if="show === 'category'">
+      <ul class="small-block-grid-3 category-type">
+        <li class="product-image" ng-repeat="product in global.products[temps.category].products" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg); background-repeat: no-repeat;">
+          <div class="row category-name">{{product.name}}</div>
+        </li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="small-8 columns product-description" ng-if="show === 'all'">
-    <ul class="small-block-grid-3 category-type">
-      <li ng-repeat="category in global.products.category" ui-sref="products({categoryId: category.keyword})" style="background-image: url(images/category/{{category.keyword}}.jpg); background-position: 50%; background-repeat: no-repeat;" ng-class="category.keyword">
-<!--         <img ng-src="images/category/{{category.keyword}}.jpg" alt=""> -->
-        <div class="row category-name">{{category.name}}</div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="small-4 columns product-nav" ng-if="show === 'category'">
-    <ul class="side-nav" role="navigation">
-      <p>{{global.products[temps.category].name}}</p>
-      <li role="menuitem" ng-repeat="product in global.products[temps.category].products">
-        <a ui-sref="products({categoryId: temps.category, productId: product.keyword})">{{product.name}}</a>
-      </li>
-     </ul>
-  </div>
-
-  <div class="small-8 columns product-description" ng-if="show === 'category'">
-    <ul class="small-block-grid-3 category-type">
-      <li class="product-image" ng-repeat="product in global.products[temps.category].products" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg); background-repeat: no-repeat;">
-        <div class="row category-name">{{product.name}}</div>
-      </li>
-    </ul>
-  </div>
-
 </div>

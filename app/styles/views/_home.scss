@@ -2,120 +2,122 @@
  * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
 */
 
-.cover-slide{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.home-container{
+  .cover-slide{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 
 
-  .cover-bg{
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/3.jpg');
-    background-position: center center;
-    background-repeat: none;
-    background-size: 100% 100%;
-
-    .cover-container{
-      position: relative;
-      height: 100%;
+    .cover-bg{
       width: 100%;
-      background-color: rgba(0,0,0,0.4);
-
-      .cover-content{
-        position: absolute;
-        top: 140px;
-
-        .content{
-          left: 0;
-        }
-
-        .main-logo{
-          width: 50%;
-        }
-
-        hr{
-          width: 40%;
-          margin: auto;
-          border: 1px solid $orange;
-          box-shadow: #000 0 2px 10px;
-        }
-
-        .tagline{
-          font-size: 30px;
-          text-transform: uppercase;
-          margin-top: 25px;
-          color: $orange;
-          font-weight: bold;
-          text-shadow: #000 0 2px 10px;
-          font-family: 'Exo', sans-serif;
-          letter-spacing: 8px;
-        }
-      }
-    }
-  }
-
-  .cover-bg-second{
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/2.jpg');
-    background-position: center center;
-    background-repeat: none;
-    background-size: 100% 100%;
-
-    .cover-container{
-      position: relative;
       height: 100%;
-      width: 100%;
+      background-image: url('../images/3.jpg');
+      background-position: center center;
+      background-repeat: none;
+      background-size: 100% 100%;
 
-      .cover-content{
-        position: absolute;
-        top: 200px;
-      }
-    }
-  }
-}
+      .cover-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
 
-.details-slide{
-  position: relative;
-  width: 100vw;
-  height: 300px;
+        .cover-content{
+          position: absolute;
+          top: 140px;
 
-  .details-bg{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    background-color: $bg-primary;
+          .content{
+            left: 0;
+          }
 
-    .details-container{
-      position: relative;
-      height: 100%;
-      width: 100%;
+          .main-logo{
+            width: 50%;
+          }
 
-      .company-description{
-        font-family: 'Oswald', sans-serif;
-        text-align: justify;
-        padding: rem-calc(65 0);
-        color: $font-primary;
-        font-size: rem-calc(18);
-        letter-spacing: rem-calc(2);
-        word-spacing: rem-calc(4);
-        color: #777777;
+          hr{
+            width: 40%;
+            margin: auto;
+            border: 1px solid $orange;
+            box-shadow: #000 0 2px 10px;
+          }
 
-        .mmc-logo{
-          background: rgba(0,0,0,0.5);
-          padding: rem-calc(35 0);
-        }
-
-        .mmc-content{
-          padding: rem-calc(30 50);
-
-          b{
-            color: #555;
+          .tagline{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            color: $orange;
+            font-weight: bold;
+            text-shadow: #000 0 2px 10px;
+            font-family: 'Exo', sans-serif;
+            letter-spacing: 8px;
           }
         }
-        .columns:last-child{
-          float: left;
+      }
+    }
+
+    .cover-bg-second{
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/2.jpg');
+      background-position: center center;
+      background-repeat: none;
+      background-size: 100% 100%;
+
+      .cover-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .cover-content{
+          position: absolute;
+          top: 200px;
+        }
+      }
+    }
+  }
+
+  .details-slide{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+
+    .details-bg{
+      position:relative;
+      width: 100%;
+      height: 100%;
+      background-color: $bg-primary;
+
+      .details-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .company-description{
+          font-family: 'Oswald', sans-serif;
+          text-align: justify;
+          padding: rem-calc(65 0);
+          color: $font-primary;
+          font-size: rem-calc(18);
+          letter-spacing: rem-calc(2);
+          word-spacing: rem-calc(4);
+          color: #777777;
+
+          .mmc-logo{
+            background: rgba(0,0,0,0.5);
+            padding: rem-calc(35 0);
+          }
+
+          .mmc-content{
+            padding: rem-calc(30 50);
+
+            b{
+              color: #555;
+            }
+          }
+          .columns:last-child{
+            float: left;
+          }
         }
       }
     }

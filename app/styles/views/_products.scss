@@ -54,11 +54,13 @@
       .category-name{
         position: absolute;
         bottom: 0;
+        font-size: rem-calc(14);
         font-family: 'Exo', sans-serif;
         text-transform: uppercase;
         background: rgba(0,0,0,0.7);
         padding: rem-calc(10);
         color: $font-secondary;
+        width: 100%;
       }
     }
   }

@@ -37,6 +37,14 @@ body, html{
 
 .container{
   min-height: 100vh;
-  position: relative;
-  top: rem-calc(100);
+}
+
+.state-container{
+  margin-top: rem-calc(100);
+  margin-bottom: rem-calc(50);
+}
+
+.home-container{
+  margin-top: rem-calc(0);
+  margin-bottom: rem-calc(0);
 }

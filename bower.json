@@ -12,7 +12,6 @@
     "angular-touch": "1.2.16",
     "jquery": "~2.1.1",
     "angular-ui-router": "~0.2.11",
-    "skrollr": "~0.6.27",
     "font-awesome": "~4.2.0"
   },
   "devDependencies": {
