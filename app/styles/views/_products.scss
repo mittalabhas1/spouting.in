@@ -31,24 +31,12 @@
     li{
       position: relative;
       height: rem-calc(262);
-      // border: 1px solid $border-primary;
       padding: 0;
       cursor: pointer;
 
-      &.perforated-sheets, &.elevator-and-conveyor-spares, &.spouting, &.pulse-jet-bag-filter-accessories, &.miscellaneous, &.knobs-and-handles{
+      &.product-image, &.category-image{
         background-size: 100% 100%;
-      }
-
-      &.pneumatic-accessories{
-        background-size: 300% 150%;
-      }
-
-      &.driving-elements, &.spouting{
-        background-size: 150% 100%;
-      }
-
-      &.product-image{
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
 
       .category-name{
