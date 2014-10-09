@@ -264,11 +264,6 @@ angular.module('spoutinginApp')
             'description': 'dsfsdfsdfsdf'
           },
           {
-            'name': 'Tension Ring',
-            'keyword': 'tension-ring',
-            'description': 'dsfsdfsdfsdf'
-          },
-          {
             'name': 'Magnet',
             'keyword': 'magnet',
             'description': 'dsfsdfsdfsdf'
@@ -391,6 +386,36 @@ angular.module('spoutinginApp')
           {
             'name': 'Sequential Timer Box',
             'keyword': 'sequential-timer-box',
+            'description': 'dsfsdfsdfsdf'
+          },
+        ],
+      },
+      'driving-elements': {
+        'name': 'Driving Elements',
+        'products': [
+          {
+            'name': 'Jaw Flex Coupling',
+            'keyword': 'jaw-flex-coupling',
+            'description': 'dsfsdfsdfsdf'
+          },
+          {
+            'name': 'Sprocket',
+            'keyword': 'sprocket',
+            'description': 'dsfsdfsdfsdf'
+          },
+          {
+            'name': 'Star Coupling',
+            'keyword': 'star-coupling',
+            'description': 'dsfsdfsdfsdf'
+          },
+          {
+            'name': 'Pin Bush Coupling',
+            'keyword': 'pin-bush-coupling',
+            'description': 'dsfsdfsdfsdf'
+          },
+          {
+            'name': 'Roll Body Gears',
+            'keyword': 'roll-body-gears',
             'description': 'dsfsdfsdfsdf'
           },
         ],
