@@ -1,31 +1,58 @@
-<div class="row state-container products-container">
-
+<!-- Our-products page -->
+<div class="row state-container products-container" ng-if="show === 'all'">
   <div class="small-10 small-centered columns">
 
-    <!-- Content for product page -->
-    <div class="small-12 columns product-description" ng-if="show === 'all'">
+    <div class="small-12 columns product-description">
       <ul class="small-block-grid-4 category-type">
-        <li class="category-image" ng-repeat="category in global.products.category" ui-sref="products({categoryId: category.keyword})" style="background-image: url(images/category/{{category.keyword}}.jpg);" ng-class="category.keyword">
-          <div class="row category-name">{{category.name}}</div>
+        <li ng-repeat="category in global.products.category" ng-class="category.keyword">
+          <div class="category-image" ui-sref="products({categoryId: category.keyword})" style="background-image: url(images/category/{{category.keyword}}.jpg);">
+            <div class="row category-name">{{category.name}}</div>
+          </div>
         </li>
       </ul>
     </div>
 
-    <!-- Side nav for category page -->
-    <div class="small-4 columns product-nav" ng-if="show === 'category'">
+  </div>
+</div>
+
+<!-- Category page (unique product images) -->
+<div class="row state-container products-container" ng-if="show === 'category' && !global.products[temps.category].combined_products">
+  <div class="small-10 small-centered columns">
+
+    <!-- Side Nav -->
+    <div class="small-4 columns product-nav">
       <ul class="side-nav" role="navigation">
         <p>{{global.products[temps.category].name}}</p>
         <li role="menuitem" ng-repeat="product in global.products[temps.category].products">
-          <a ui-sref="products({categoryId: temps.category, productId: product.keyword})">{{product.name}}</a>
+          <a >{{product.name}}</a>
         </li>
        </ul>
     </div>
 
-    <!-- Content for category page -->
-    <div class="small-8 columns product-description" ng-if="show === 'category'">
+    <!-- Content -->
+    <div class="small-8 columns product-description">
       <ul class="small-block-grid-3 category-type">
-        <li class="product-image" ng-repeat="product in global.products[temps.category].products" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg); background-repeat: no-repeat;">
-          <div class="row category-name">{{product.name}}</div>
+        <li class="product-list" ng-repeat="product in global.products[temps.category].products">
+          <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
+            <div class="row category-name">{{product.name}}</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Category page (combined product images) -->
+<div class="row state-container products-container" ng-if="show === 'category' && global.products[temps.category].combined_products">
+  <div class="small-10 small-centered columns">
+
+    <div class="small-12 columns product-description">
+      <ul class="small-block-grid-1 category-type">
+        <li class="product-list combined-products" ng-repeat="product in global.products[temps.category].products">
+          <div class="product-image">
+            <img src="images/product/{{temps.category}}/{{product}}.jpg" alt="{{product}}">
+          </div>
         </li>
       </ul>
     </div>

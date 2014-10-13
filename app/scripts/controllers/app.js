@@ -420,6 +420,11 @@ angular.module('spoutinginApp')
           },
         ],
       },
+      'knobs-and-handles': {
+        'name': 'Knobs & Handles',
+        'combined_products': true,
+        'products': ['knobs1', 'knobs2'],
+      },
     };
 
   }]);

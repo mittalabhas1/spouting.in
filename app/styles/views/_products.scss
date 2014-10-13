@@ -35,7 +35,27 @@
       padding: 0;
       cursor: pointer;
 
-      &.product-image, &.category-image{
+      &.combined-products{
+        height: auto;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      &.product-list{
+        padding: rem-calc(5);
+
+        .product-image{
+          box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
+          border-radius: rem-calc(5);
+        }
+      }
+
+      .product-image, .category-image{
+        position: relative;
+        height: 100%;
+        width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
