@@ -49,6 +49,11 @@ angular.module('spoutinginApp')
           'code': 'CG06',
         },
         {
+          'name': 'Driving Elements',
+          'keyword': 'driving-elements',
+          'code': 'CG06',
+        },
+        {
           'name': 'Vibration Absorbers',
           'keyword': 'vibration-absorbers',
           'code': 'CG08',
@@ -323,8 +328,8 @@ angular.module('spoutinginApp')
             'code': 'EC13',
           },
           {
-            'name': 'Drag Chain Conveyor Links',
-            'keyword': 'drag-chain-conveyor-links',
+            'name': 'Chain Conveyor Links',
+            'keyword': 'chain-conveyor-links',
             'description': 'dsfsdfsdfsdf',
             'code': 'EC14',
           },
@@ -384,8 +389,8 @@ angular.module('spoutinginApp')
             'code': 'BF05',
           },
           {
-            'name': 'Pressure Guage',
-            'keyword': 'pressure-guage',
+            'name': 'Pressure Gauge',
+            'keyword': 'pressure-gauge',
             'description': 'dsfsdfsdfsdf',
             'code': 'BF06',
           },
@@ -476,6 +481,12 @@ angular.module('spoutinginApp')
             'code': 'SP01',
           },
           {
+            'name': 'Branch Pipe (Y)',
+            'keyword': 'branch-pipe-y',
+            'description': 'dsfsdfsdfsdf',
+            'code': 'SP02',
+          },
+          {
             'name': 'Divider',
             'keyword': 'divider',
             'description': 'dsfsdfsdfsdf',
@@ -488,10 +499,16 @@ angular.module('spoutinginApp')
             'code': 'SP04',
           },
           {
-            'name': 'Elbow',
-            'keyword': 'elbow',
+            'name': 'Inspection Door',
+            'keyword': 'inspection-door',
             'description': 'dsfsdfsdfsdf',
-            'code': 'SP08',
+            'code': 'SP05',
+          },
+          {
+            'name': 'Dead Box',
+            'keyword': 'dead-box',
+            'description': 'dsfsdfsdfsdf',
+            'code': 'SP06',
           },
           {
             'name': 'Pipe Segment',
@@ -500,22 +517,16 @@ angular.module('spoutinginApp')
             'code': 'SP07',
           },
           {
+            'name': 'Elbow',
+            'keyword': 'elbow',
+            'description': 'dsfsdfsdfsdf',
+            'code': 'SP08',
+          },
+          {
             'name': 'Universal Bend',
             'keyword': 'universal-bend',
             'description': 'dsfsdfsdfsdf',
             'code': 'SP09',
-          },
-          {
-            'name': 'Branch Pipe (Y)',
-            'keyword': 'branch-pipe-y',
-            'description': 'dsfsdfsdfsdf',
-            'code': 'SP02',
-          },
-          {
-            'name': 'Inspection with Hinged Door',
-            'keyword': 'inspection-with-hinged-door',
-            'description': 'dsfsdfsdfsdf',
-            'code': 'SP05',
           },
           {
             'name': 'Sleeve',
@@ -536,22 +547,10 @@ angular.module('spoutinginApp')
             'code': '',
           },
           {
-            'name': 'Bagging Spout',
-            'keyword': 'bagging-spout',
+            'name': 'Bag Spout',
+            'keyword': 'bag-spout',
             'description': 'dsfsdfsdfsdf',
             'code': 'SP13',
-          },
-          {
-            'name': 'Bag Clamps',
-            'keyword': 'bag-clamps',
-            'description': 'dsfsdfsdfsdf',
-            'code': '',
-          },
-          {
-            'name': 'Dead Box',
-            'keyword': 'dead-box',
-            'description': 'dsfsdfsdfsdf',
-            'code': 'SP06',
           },
           {
             'name': 'View Glass',
@@ -560,8 +559,8 @@ angular.module('spoutinginApp')
             'code': 'SP14',
           },
           {
-            'name': 'Magnet',
-            'keyword': 'magnet',
+            'name': 'Magnet Box',
+            'keyword': 'magnet-box',
             'description': 'dsfsdfsdfsdf',
             'code': 'SP15',
           },
@@ -570,6 +569,12 @@ angular.module('spoutinginApp')
             'keyword': 'rotameter',
             'description': 'dsfsdfsdfsdf',
             'code': 'SP16',
+          },
+          {
+            'name': 'Long Ducting',
+            'keyword': 'long-ducting',
+            'description': 'dsfsdfsdfsdf',
+            'code': 'SP17',
           },
         ],
       },
