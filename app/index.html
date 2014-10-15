@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Spouting.in</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -34,9 +34,9 @@
               <li class="header-menu-item active"><a href="#">Home</a></li>
               <li class="header-menu-item active"><a href="#">About Us</a></li>
               <li class="header-menu-item has-dropdown">
-                <a ui-sref="products">Our Products</a>
+                <a ui-sref="products({categoryId: null, productId: null})">Products</a>
                 <ul class="dropdown">
-                  <li class="header-menu-sub-item" ng-repeat="category in global.products.category"><a ui-sref="products({categoryId: category.keyword})">{{category.name}}</a></li>
+                  <li class="header-menu-sub-item" ng-repeat="category in global.products.category"><a ui-sref="products({categoryId: category.keyword, productId: null})">{{category.name}}</a></li>
                   <!-- <li class="header-menu-sub-item has-dropdown">
                     <a href="#">Product IV</a>
                     <ul class="dropdown">

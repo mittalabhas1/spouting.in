@@ -5,7 +5,7 @@
     <div class="small-12 columns product-description">
       <ul class="small-block-grid-4 category-type">
         <li ng-repeat="category in global.products.category" ng-class="category.keyword">
-          <div class="category-image" ui-sref="products({categoryId: category.keyword})" style="background-image: url(images/category/{{category.keyword}}.jpg);">
+          <div class="category-image" ui-sref="products({categoryId: category.keyword, productId: null})" style="background-image: url(images/category/{{category.keyword}}.jpg);">
             <div class="row category-name">{{category.name}}</div>
           </div>
         </li>
