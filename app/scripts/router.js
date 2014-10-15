@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       controller: 'HomeCtrl'
     })
     .state('products', {
-      url: "/our-products/:categoryId/:productId",
+      url: "/products/:categoryId/:productId",
       params: {
         categoryId: { value: null },
         productId: { value: null }
@@ -43,3 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       controller: 'ProductCtrl'
     });
 });
+
+// app.config(['$locationProvider', function($locationProvider) {
+//   $locationProvider.html5Mode(true);
+// }]);

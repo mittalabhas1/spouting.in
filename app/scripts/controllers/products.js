@@ -17,8 +17,8 @@ angular.module('spoutinginApp')
     $scope.temps = {};
 
     var init = function(){
-      if($stateParams.categoryId !== null){
-        if($stateParams.productId !== null){
+      if($stateParams.categoryId !== null && typeof $stateParams.categoryId !== undefined){
+        if($stateParams.productId !== null && typeof $stateParams.productId !== undefined){
           $scope.show = 'product';
           $scope.temps.category = $stateParams.categoryId;
           $scope.temps.product = $stateParams.productId;
