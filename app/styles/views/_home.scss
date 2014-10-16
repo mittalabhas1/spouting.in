@@ -94,7 +94,7 @@
         width: 100%;
 
         .company-description{
-          font-family: 'Oswald', sans-serif;
+          font-family: $font3;
           text-align: justify;
           padding: rem-calc(65 0);
           color: $font-primary;
@@ -110,6 +110,8 @@
 
           .mmc-content{
             padding: rem-calc(30 50);
+            font-size: rem-calc(16);
+            line-height: rem-calc(20);
 
             b{
               color: #555;
