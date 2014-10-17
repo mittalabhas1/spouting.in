@@ -1,0 +1,22 @@
+/*
+ * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
+*/
+
+@font-face {
+  font-family: 'RopaSans';
+  src: url('../fonts/RopaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/Exo-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+$font1: 'RopaSans', sans-serif;
+$font2: 'Exo-Regular', sans-serif;
+$font3: 'Oswald', sans-serif;

@@ -1,0 +1,84 @@
+.product-nav{
+  .side-nav{
+    position: fixed;
+    border: 1px solid $border-primary;
+    border-radius: rem-calc(5);
+    box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
+    padding: rem-calc(20);
+    font-family: $font2;
+    max-width: rem-calc(300);
+    min-width: rem-calc(275);
+
+    p{
+      margin-bottom: rem-calc(5);
+      text-transform: uppercase;
+    }
+
+    li{
+      list-style-type: disc;
+      margin-bottom: 0;
+      line-height: rem-calc(18);
+      text-transform: capitalize;
+
+      a{
+        color: $font-primary;
+      }
+    }
+  }
+}
+
+.product-description{
+  .category-type{
+    margin: 0;
+    text-align: center;
+
+    li{
+      position: relative;
+      height: rem-calc(262);
+      padding: 0;
+      cursor: pointer;
+
+      &.combined-products{
+        height: auto;
+        padding: rem-calc(0 0 50);
+
+        img{
+          width: 100%;
+        }
+      }
+
+      &.product-list{
+        display: inline-flex;
+        width: rem-calc(250);
+        height: rem-calc(250);
+        margin: auto;
+        padding: rem-calc(5);
+
+        .product-image{
+          box-shadow: $box-shadow-primary rem-calc(4) rem-calc(4) rem-calc(4);
+          border-radius: rem-calc(5);
+        }
+      }
+
+      .product-image, .category-image{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      .category-name{
+        position: absolute;
+        bottom: 0;
+        font-size: rem-calc(14);
+        font-family: 'Exo', sans-serif;
+        text-transform: uppercase;
+        background: rgba(0,0,0,0.7);
+        padding: rem-calc(10);
+        color: $font-secondary;
+        width: 100%;
+      }
+    }
+  }
+}

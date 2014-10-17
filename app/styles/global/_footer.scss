@@ -1,0 +1,45 @@
+/*
+ * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
+*/
+
+.footer{
+  position: relative;
+  font-family: $font1;
+  background-color: $bg-footer;
+  min-height: rem-calc(150);
+  text-transform: uppercase;
+
+  .footer-container{
+    height: 100%;
+    width: 80%;
+    margin: 50px auto;
+
+    .company-details{
+      line-height: rem-calc(20);
+      color: $font-footer;
+    }
+
+    .social-icons{
+      i{
+        padding: rem-calc(8);
+
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .designed-by{
+      position: relative;
+      top: rem-calc(100);
+    }
+
+    .contact-us-title{
+      color: $font-secondary;
+    }
+
+    .company-email{
+      text-transform: lowercase;
+    }
+  }
+}

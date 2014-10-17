@@ -1,0 +1,47 @@
+/*
+ * Author: @bhas (mittalabhas1@gmail.com) and V@m$he (vamshedhar@gmail.com)
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $font-primary;
+}
+
+body, html{
+  position: relative;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $bg-primary;
+}
+
+.row{
+  max-width: none;
+
+  .row{
+    margin: 0;
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// ::-webkit-scrollbar{
+//   display: none !important;
+// }
+
+.state-container{
+  margin-top: rem-calc(100);
+  margin-bottom: rem-calc(50);
+  min-height: 56.5vh;
+}
+
+.home-container{
+  margin-top: rem-calc(0);
+  margin-bottom: rem-calc(0);
+}
