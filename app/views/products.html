@@ -20,18 +20,18 @@
   <div class="small-10 small-centered columns">
 
     <!-- Side Nav -->
-    <div class="small-4 columns product-nav">
+    <!-- <div class="small-4 columns product-nav">
       <ul class="side-nav" role="navigation">
         <p>{{global.products[temps.category].name}}</p>
         <li role="menuitem" ng-repeat="product in global.products[temps.category].products">
           <a >{{product.name}}</a>
         </li>
        </ul>
-    </div>
+    </div> -->
 
     <!-- Content -->
-    <div class="small-8 columns product-description">
-      <ul class="small-block-grid-3 category-type">
+    <div class="small-12 columns product-description">
+      <ul class="category-type product-type">
         <li class="product-list" ng-repeat="product in global.products[temps.category].products">
           <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
             <div class="row category-name">{{product.name}}</div>

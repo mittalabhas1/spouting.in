@@ -346,10 +346,12 @@ angular.module('spoutinginApp')
         'combined_products': true,
         'products': [
           {
+            'name': 'Knobs 1',
             'keyword': 'knobs1',
             'code': 'KN01',
           },
           {
+            'name': 'Knobs 2',
             'keyword': 'knobs2',
             'code': 'KN02',
           },

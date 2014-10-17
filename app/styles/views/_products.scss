@@ -29,6 +29,9 @@
 
 .product-description{
   .category-type{
+    margin: 0;
+    text-align: center;
+
     li{
       position: relative;
       height: rem-calc(262);
@@ -37,6 +40,7 @@
 
       &.combined-products{
         height: auto;
+        padding: rem-calc(0 0 50);
 
         img{
           width: 100%;
@@ -44,6 +48,10 @@
       }
 
       &.product-list{
+        display: inline-flex;
+        width: rem-calc(250);
+        height: rem-calc(250);
+        margin: auto;
         padding: rem-calc(5);
 
         .product-image{
