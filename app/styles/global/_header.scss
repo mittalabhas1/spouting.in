@@ -42,7 +42,7 @@
             a{
               font-family: $font2;
               background: transparent;
-              color: #777777;
+              color: $font-primary;
               text-transform: uppercase;
               transition: color .3s ease-out;
               -o-transition: color .3s ease-out;
