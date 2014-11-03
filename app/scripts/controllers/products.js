@@ -17,6 +17,7 @@ angular.module('spoutinginApp')
     $scope.temps = {};
 
     var init = function(){
+      $scope.temps.viewAs = 'list';
       if($stateParams.categoryId !== null && typeof $stateParams.categoryId !== undefined){
         if($stateParams.productId !== null && typeof $stateParams.productId !== undefined){
           $scope.show = 'product';
