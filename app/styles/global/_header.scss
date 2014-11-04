@@ -16,6 +16,13 @@
     &.has-dropdown a, &.active a, a{
       padding: rem-calc(0 20) !important;
     }
+
+    .show-arrow::after{
+      position: absolute;
+      top: -4px;
+      right: -15px;
+      content: "\00bb";
+    }
   }
   .top-bar{
     .header-logo-container, .header-menu-container{
@@ -35,7 +42,7 @@
             a{
               font-family: $font2;
               background: transparent;
-              color: #777777;
+              color: $font-primary;
               text-transform: uppercase;
               transition: color .3s ease-out;
               -o-transition: color .3s ease-out;

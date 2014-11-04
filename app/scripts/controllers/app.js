@@ -168,12 +168,6 @@ angular.module('spoutinginApp')
         'name': 'Perforated Sheets',
         'products': [
           {
-            'name': 'Dimple Type',
-            'keyword': 'dimple-type',
-            'description': 'dsfsdfsdfsdf',
-            'code': 'PRF01',
-          },
-          {
             'name': 'Rectangular Hole Type',
             'keyword': 'rectangular-hole-type',
             'description': 'dsfsdfsdfsdf',
@@ -192,16 +186,22 @@ angular.module('spoutinginApp')
             'code': 'PRF04',
           },
           {
+            'name': 'Wire Mesh',
+            'keyword': 'wire-mesh',
+            'description': 'dsfsdfsdfsdf',
+            'code': 'PRF06',
+          },
+          {
             'name': 'Triangular Hole Type',
             'keyword': 'triangular-hole-type',
             'description': 'dsfsdfsdfsdf',
             'code': 'PRF05',
           },
           {
-            'name': 'Wire Mesh',
-            'keyword': 'wire-mesh',
+            'name': 'Dimple Type',
+            'keyword': 'dimple-type',
             'description': 'dsfsdfsdfsdf',
-            'code': 'PRF06',
+            'code': 'PRF01',
           },
         ],
       },

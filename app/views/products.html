@@ -2,7 +2,7 @@
 <div class="row state-container products-container" ng-if="show === 'all'">
   <div class="small-10 small-centered columns">
 
-    <div class="small-12 columns product-description">
+    <div class="small-12 columns product-description grid-view">
       <ul class="small-block-grid-4 category-type">
         <li ng-repeat="category in global.products.category" ng-class="category.keyword">
           <div class="category-image" ui-sref="products({categoryId: category.keyword, productId: null})" style="background-image: url(images/category/{{category.keyword}}.jpg);">
@@ -29,12 +29,31 @@
        </ul>
     </div> -->
 
-    <!-- Content -->
-    <div class="small-12 columns product-description">
+    <div class="small-12 text-right columns product-nav-type">
+      <div class="product-view">
+        View as:
+        <i class="fa fa-th-large" title="Grid" ng-click="temps.viewAs = 'grid'"></i>
+        <i class="fa fa-th-list" title="List" ng-click="temps.viewAs = 'list'"></i>
+      </div>
+    </div>
+
+    <!-- Content(grid view) -->
+    <div class="small-12 columns product-description grid-view" ng-if="temps.viewAs === 'grid'">
       <ul class="category-type product-type">
         <li class="product-list" ng-repeat="product in global.products[temps.category].products">
           <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
             <div class="row category-name">{{product.name}}</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content(list view) -->
+    <div class="small-12 columns product-description list-view" ng-if="temps.viewAs === 'list'">
+      <ul class="category-type product-type">
+        <li class="product-list" ng-repeat="product in global.products[temps.category].products">
+          <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
+            <div class="row category-name">{{product.name}}<br /><br />Product Code: {{product.code}}</div>
           </div>
         </li>
       </ul>
@@ -47,7 +66,7 @@
 <div class="row state-container products-container" ng-if="show === 'category' && global.products[temps.category].combined_products">
   <div class="small-10 small-centered columns">
 
-    <div class="small-12 columns product-description">
+    <div class="small-12 columns product-description grid-view">
       <ul class="small-block-grid-1 category-type">
         <li class="product-list combined-products" ng-repeat="product in global.products[temps.category].products">
           <div class="product-image">
