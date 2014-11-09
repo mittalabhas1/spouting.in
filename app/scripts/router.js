@@ -24,22 +24,22 @@ var app = angular.module('spoutinginApp', [
 app.config(function($stateProvider, $urlRouterProvider) {
 
   // For any unmatched url, will redirect to /
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise('/');
 
   // Setting up the states
   $stateProvider
     .state('home', {
-      url: "/",
-      templateUrl: "views/home.html",
+      url: '/',
+      templateUrl: 'views/home.html',
       controller: 'HomeCtrl'
     })
     .state('products', {
-      url: "/products/:categoryId/:productId",
+      url: '/products/:categoryId/:productId',
       params: {
         categoryId: { value: null },
         productId: { value: null }
       },
-      templateUrl: "views/products.html",
+      templateUrl: 'views/products.html',
       controller: 'ProductCtrl'
     });
 });
