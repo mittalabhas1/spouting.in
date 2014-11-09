@@ -29,16 +29,18 @@
 
 .product-nav-type{
   .product-view{
-    height: rem-calc(50);
-    padding: rem-calc(10);
-    float: right;
-    font-family: $font1;
-    font-size: rem-calc(16);
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background: rgba(0,0,0,0.5);
     text-transform: uppercase;
+    color: white;
+    font-family: "RopaSans", sans-serif;
+    font-size: 2rem;
 
     i{
-      border: 1px solid $box-shadow-primary;
-      padding: rem-calc(3);
+      padding: rem-calc(10);
+      float: right;
 
       &:hover{
         color: $bg-primary;

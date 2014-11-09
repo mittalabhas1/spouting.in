@@ -29,11 +29,20 @@
       margin-bottom: 10px;
       font-size: 13px;
       text-transform: uppercase;
-      color: $primary-color;
+      // color: $primary-color;
+      color: #E2ECF0;
+      cursor: pointer;
 
-      &::after{
-        content: "\00bb";
-        margin-left: 2px;
+      div{
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        float: right;
+        width: auto;
+
+        &::after{
+          content: "\00bb";
+          margin-left: 2px;
+        }
       }
     }
   }

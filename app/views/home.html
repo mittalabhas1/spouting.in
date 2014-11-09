@@ -3,7 +3,9 @@
   <div class="home-wrapper first-wrapper">
     <div class="wrapper-head">
       <div class="heading-name">&nbsp;</div>
-      <div class="browse-all" ui-sref="products({categoryId: null, productId: null})">Browse all categories</div>
+      <div class="browse-all">
+        <div ui-sref="products({categoryId: null, productId: null})">Browse all categories</div>
+      </div>
     </div>
     <ul class="home-categories">
       <li class="slider-images">
@@ -27,7 +29,9 @@
   <div class="home-wrapper">
     <div class="wrapper-head">
       <div class="heading-name">Spouting Showcase</div>
-      <div class="browse-all" ui-sref="products({categoryId: 'spouting-and-ducting', productId: null})">More spouting showcase</div>
+      <div class="browse-all">
+        <div ui-sref="products({categoryId: 'spouting-and-ducting', productId: null})">More spouting showcase</div>
+      </div>
     </div>
     <ul class="home-categories">
       <li ng-repeat="product in global.products['spouting-and-ducting'].products | limitTo:4" ui-sref="products({categoryId: 'spouting-and-ducting', productId: null})">
@@ -46,7 +50,9 @@
   <div class="home-wrapper">
     <div class="wrapper-head">
       <div class="heading-name">Perforated Sheets</div>
-      <div class="browse-all" ui-sref="products({categoryId: 'perforated-sheets', productId: null})">More</div>
+      <div class="browse-all">
+        <div ui-sref="products({categoryId: 'perforated-sheets', productId: null})">More Perforated Sheets</div>
+      </div>
     </div>
     <ul class="home-categories">
       <li ng-repeat="product in global.products['perforated-sheets'].products | limitTo:4" ui-sref="products({categoryId: 'perforated-sheets', productId: null})">
