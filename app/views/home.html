@@ -9,8 +9,10 @@
     </div>
     <ul class="home-categories">
       <li class="slider-images">
-        <div class="img-container">
-          <img src="images/slide.jpg" alt="Slide">
+        <div class="img-container" ng-repeat="image in slides" ng-hide="!isCurrentSlideIndex($index)" ng-animate="slider">
+            <img ng-src="images/{{image}}.jpg" alt="Slide">
+            <a class="arrow prev" href="#" ng-click="nextSlide()"><i class="fa fa-angle-left"></i></a>
+            <a class="arrow next" href="#" ng-click="prevSlide()"><i class="fa fa-angle-right"></i></a>
         </div>
       </li>
       <li ng-repeat="category in global.products.category | limitTo:6" ui-sref="products({categoryId: category.keyword, productId: null})">

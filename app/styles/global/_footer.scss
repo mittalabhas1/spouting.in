@@ -19,8 +19,9 @@
       color: $font-footer;
     }
 
-    .social-icons{
+    .social-icons a{
       i{
+        color: $font-footer;
         padding: rem-calc(8);
 
         &:hover{
