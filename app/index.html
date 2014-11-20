@@ -20,7 +20,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="bg-image-wrapper"></div>
+    <!-- <div id="bg-image-wrapper"></div> -->
 
     <!-- Header Starts Here-->
     <div class="header fixed">
@@ -41,7 +41,7 @@
                     <a ui-sref="products({categoryId: category.keyword, productId: null})">{{category.name}}</a>
                     <ul class="dropdown">
                       <li class="header-menu-sub-item" ng-repeat="product in global.products[category.keyword].products">
-                        <a>{{product.name}}</a>
+                        <a ui-sref="products({categoryId: category.keyword, productId: null})">{{product.name}}</a>
                       </li>
                     </ul>
                   </li>
@@ -85,7 +85,7 @@
 
         <div class="small-5 columns text-right company-details">
           <div class="copyright">&copy;&nbsp; 2014 M.M.Consultancy Pvt. Ltd.</div>
-          <div>Last updated: 05:45AM, Nov. 3, 2014</div>
+          <div>Last updated: 18:45, Nov. 20, 2014</div>
           <div class="company-phone"><span class="contact-us-title">Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank">Abhas Mittal</a><!--  &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a> --></div>
         </div>
       </div>

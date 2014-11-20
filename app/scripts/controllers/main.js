@@ -16,6 +16,7 @@ angular.module('spoutinginApp')
 
     $scope.temps = {};
     $scope.slides = ['slide1', 'slide2', 'slide3'];
+    $scope.stopSlider = false;
 
     $scope.currentIndex = 0;
 
@@ -29,36 +30,42 @@ angular.module('spoutinginApp')
 
     $scope.prevSlide = function () {
       $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+      if ($scope.stopSlider){
+        $interval.cancel();
+      }
     };
 
     $scope.nextSlide = function () {
       $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+      if ($scope.stopSlider){
+        $interval.cancel();
+      }
     };
 
     $interval(function(){
-      $scope.nextSlide();
-    }, 2000);
+      $scope.nextSlide()
+    }, 3000);
 
-  }])
-  .animation('.slide-animation', function () {
-    return {
-      addClass: function (element, className, done) {
-        if (className == 'ng-hide') {
-            TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
-        }
-        else {
-            done();
-        }
-      },
-      removeClass: function (element, className, done) {
-        if (className == 'ng-hide') {
-          element.removeClass('ng-hide');
-          TweenMax.set(element, { left: element.parent().width() });
-          TweenMax.to(element, 0.5, {left: 0, onComplete: done });
-        }
-        else {
-          done();
-        }
-      }
-    };
-  });
+  }]);
+  // .animation('.slide-animation', function () {
+  //   return {
+  //     addClass: function (element, className, done) {
+  //       if (className === 'ng-hide') {
+  //           TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+  //       }
+  //       else {
+  //           done();
+  //       }
+  //     },
+  //     removeClass: function (element, className, done) {
+  //       if (className === 'ng-hide') {
+  //         element.removeClass('ng-hide');
+  //         TweenMax.set(element, { left: element.parent().width() });
+  //         TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+  //       }
+  //       else {
+  //         done();
+  //       }
+  //     }
+  //   };
+  // });

@@ -24,6 +24,8 @@
     }
   }
   .top-bar{
+    background: $bg-header;
+
     .header-logo-container, .header-menu-container{
       padding: 0px 100px;
 
@@ -49,7 +51,7 @@
               -webkit-transition: color .3s ease-out;
 
               &:hover, &.active{
-                color: $primary-color;
+                color: $header-hover;
               }
             }
           }
@@ -61,7 +63,7 @@
             height: 30px;
 
             &:hover{
-              background: #EEEEEE;
+              background: $bg-header;
             }
 
             a{
@@ -76,5 +78,9 @@
 
   .top-bar-section .right li .dropdown{
     right: -75%;
+  }
+
+  .top-bar-section .has-dropdown a::after{
+    right: -20px;
   }
 }
