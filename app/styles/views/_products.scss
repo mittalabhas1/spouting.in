@@ -1,3 +1,9 @@
+.category-container{
+  .product-description .category-type li{
+    padding: 5px;
+  }
+}
+
 .product-nav{
   .side-nav{
     position: fixed;
@@ -116,9 +122,8 @@
         bottom: 0;
         font-size: rem-calc(14);
         font-family: 'Exo', sans-serif;
-        text-transform: uppercase;
-        background: rgba(0,0,0,0.7);
-        padding: rem-calc(10);
+        background: $opacity1;
+        padding: rem-calc(5);
         color: $font-secondary;
         width: 100%;
       }

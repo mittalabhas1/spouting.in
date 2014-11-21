@@ -16,11 +16,12 @@
       padding: rem-calc(0 20) !important;
     }
 
-    .show-arrow::after{
-      position: absolute;
-      top: -4px;
-      right: -15px;
-      content: "\00bb";
+    &.has-dropdown ul.dropdown li.has-dropdown a{
+      text-transform: none !important;
+
+      &::after{
+        content: "";
+      }
     }
   }
   .top-bar{
