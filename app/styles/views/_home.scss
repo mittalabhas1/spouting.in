@@ -36,7 +36,7 @@
       cursor: pointer;
 
       div{
-        background: rgba(0,0,0,0.5);
+        background: $opacity1;
         padding: 10px;
         float: right;
         width: auto;
@@ -89,7 +89,7 @@
             }
 
             i{
-              background: rgba(0,0,0,0.5);
+              background: $opacity2;
               color: $border-primary;
               border-radius: 50%;
               font-size: 2.5em;
@@ -127,9 +127,7 @@
             font-size: 14px;
             font-family: $font1;
             margin: 0 5px;
-            background: rgba(0,0,0,0.2);
-            // background: rgba(0,0,0,0.5);
-            // color: $home-color;
+            background: $opacity3;
           }
         }
       }

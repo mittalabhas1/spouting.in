@@ -47,9 +47,37 @@
                   </li>
                 </ul>
               </li>
-              <li class="header-menu-item active"><a href="#">Contact Us</a></li>
+              <!-- <li class="header-menu-item active"><a href="#">Contact Us</a></li> -->
               <li class="header-menu-item has-dropdown">
-                <a class="show-arrow">More</a>
+                <a>All Categories</a>
+                <ul class="dropdown">
+                  <div class="row header-categories">
+                    <div class="header-category-block" ng-repeat="category in global.products.category" ng-if="category.keyword !== 'knobs-and-handles' && category.keyword !== 'vibration-absorbers'" ui-sref="products({categoryId: category.keyword, productId: null})">
+                      <b>{{category.name}}</b>
+                      <br />
+                      <ul>
+                        <li ng-repeat="product in global.products[category.keyword].products|limitTo: 3">
+                          <i class="fa fa-angle-right"></i>&nbsp;{{product.name}}
+                        </li>
+                        <li ng-if="(global.products[category.keyword].products).length > 4">
+                          <b>
+                            More..&nbsp;
+                            <i class="fa fa-angle-double-right"></i>
+                            <br /><br />
+                          </b>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="header-category-block">
+                      <b>Knobs and Handles </b><i class="fa fa-angle-double-right"></i>
+                      <br />
+                      <b>Vibration Absorbers </b><i class="fa fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="header-menu-item has-dropdown">
+                <a>More</a>
                 <ul class="dropdown">
                   <li class="header-menu-sub-item active"><a href="http://mmconsultancy.in/" target="_blank">Mmconsultancy.in</a></li>
                   <li class="header-menu-sub-item active"><a href="http://truckloader.in/" target="_blank">Truckloader.in</a></li>
@@ -84,9 +112,9 @@
         </div>
 
         <div class="small-5 columns text-right company-details">
-          <div class="copyright">&copy;&nbsp; 2014 M.M.Consultancy Pvt. Ltd.</div>
-          <div>Last updated: 18:45, Nov. 20, 2014</div>
-          <div class="company-phone"><span class="contact-us-title">Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank">Abhas Mittal</a><!--  &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a> --></div>
+          <div class="copyright">&copy; 2014 M.M.Consultancy Pvt. Ltd.</div>
+          <div>Last updated: 07:57, Dec. 2, 2014</div>
+          <div class="company-phone"><span>Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank" class="company-details">Abhas Mittal</a><!--  &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a> --></div>
         </div>
       </div>
     </div>

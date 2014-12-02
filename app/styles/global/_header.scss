@@ -16,11 +16,12 @@
       padding: rem-calc(0 20) !important;
     }
 
-    .show-arrow::after{
-      position: absolute;
-      top: -4px;
-      right: -15px;
-      content: "\00bb";
+    &.has-dropdown ul.dropdown li.has-dropdown a{
+      text-transform: none !important;
+
+      &::after{
+        content: "";
+      }
     }
   }
   .top-bar{
@@ -83,4 +84,18 @@
   .top-bar-section .has-dropdown a::after{
     right: -20px;
   }
+}
+
+.header-categories{
+  background: #fff;
+  padding: 20px;
+  max-height: 500px;
+  width: 850px;
+  overflow: auto;
+}
+
+.header-category-block{
+  // display: inline-block;
+  float: left;
+  width: 32%;
 }
