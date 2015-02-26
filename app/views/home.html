@@ -17,7 +17,7 @@
       </div>
     </div>
     <ul class="home-categories">
-      <li ng-repeat="category in global.products.category | limitTo:4" ui-sref="products({categoryId: category.keyword, productId: null})">
+      <li ng-repeat="category in _.values(objectMap.categories) | limitTo:4" ui-sref="products({categoryId: category.keyword, productId: null})">
         <div class="category-wrapper">
           <div class="home-category-container">
             <div class="img-container">
@@ -38,7 +38,7 @@
       </div>
     </div>
     <ul class="home-categories">
-      <li ng-repeat="product in global.products['spouting-and-ducting'].products | limitTo:4" ui-sref="products({categoryId: 'spouting-and-ducting', productId: null})">
+      <li ng-repeat="product in _.values(objectMap.products)|filter:'spouting-and-ducting'|limitTo:4" ui-sref="products({categoryId: 'spouting-and-ducting', productId: null})">
         <div class="category-wrapper">
           <div class="home-category-container">
             <div class="img-container">
@@ -59,7 +59,7 @@
       </div>
     </div>
     <ul class="home-categories">
-      <li ng-repeat="product in global.products['perforated-sheets'].products | limitTo:4" ui-sref="products({categoryId: 'perforated-sheets', productId: null})">
+      <li ng-repeat="product in _.values(objectMap.products)|filter:'plantsifter-accessories'|limitTo:4" ui-sref="products({categoryId: 'perforated-sheets', productId: null})">
         <div class="category-wrapper">
           <div class="home-category-container">
             <div class="img-container">

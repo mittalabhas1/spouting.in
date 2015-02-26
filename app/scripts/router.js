@@ -18,7 +18,8 @@ var app = angular.module('spoutinginApp', [
   'ngResource',
   'ngSanitize',
   'ngTouch',
-  'ui.router'
+  'ui.router',
+  'firebase'
 ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {

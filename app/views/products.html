@@ -4,7 +4,7 @@
 
     <div class="small-12 columns product-description grid-view">
       <ul class="small-block-grid-4 category-type">
-        <li ng-repeat="category in global.products.category" ng-class="category.keyword">
+        <li ng-repeat="category in _.values(objectMap.categories)|orderBy:ord_no" ng-class="category.keyword">
           <div class="category-image" ui-sref="products({categoryId: category.keyword, productId: null})" style="background-image: url(images/category/{{category.keyword}}.jpg);">
             <div class="row category-name">{{category.name}}</div>
           </div>
@@ -16,7 +16,7 @@
 </div>
 
 <!-- Category page (unique product images) -->
-<div class="row state-container products-container" ng-if="show === 'category' && !global.products[temps.category].combined_products">
+<div class="row state-container products-container" ng-if="show === 'category' && !objectMap.categories[temps.category].combined_products">
   <div class="small-10 small-centered columns">
 
     <!-- Side Nav -->
@@ -40,7 +40,7 @@
     <!-- Content(grid view) -->
     <div class="small-12 columns product-description grid-view" ng-if="temps.viewAs === 'grid'">
       <ul class="category-type product-type">
-        <li class="product-list" ng-repeat="product in global.products[temps.category].products">
+        <li class="product-list" ng-repeat="product in _.values(objectMap.products)|filter:temps.category">
           <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
             <div class="row category-name">{{product.name}}</div>
           </div>
@@ -51,7 +51,7 @@
     <!-- Content(list view) -->
     <div class="small-12 columns product-description list-view" ng-if="temps.viewAs === 'list'">
       <ul class="category-type product-type">
-        <li class="product-list" ng-repeat="product in global.products[temps.category].products">
+        <li class="product-list" ng-repeat="product in _.values(objectMap.products)|filter:temps.category">
           <div class="product-image" style="background-image: url(images/product/{{temps.category}}/{{product.keyword}}.jpg);">
             <div class="row category-name">{{product.name}}<br /><br />Product Code: {{product.code}}</div>
           </div>
@@ -63,12 +63,12 @@
 </div>
 
 <!-- Category page (combined product images) -->
-<div class="row state-container products-container" ng-if="show === 'category' && global.products[temps.category].combined_products">
+<div class="row state-container products-container" ng-if="show === 'category' && objectMap.categories[temps.category].combined_products">
   <div class="small-10 small-centered columns">
 
     <div class="small-12 columns product-description grid-view">
       <ul class="small-block-grid-1 category-type">
-        <li class="product-list combined-products" ng-repeat="product in global.products[temps.category].products">
+        <li class="product-list combined-products" ng-repeat="product in _.values(objectMap.products)|filter:category.keyword">
           <div class="product-image">
             <img src="images/product/{{temps.category}}/{{product.keyword}}.jpg" alt="{{product.keyword}}">
           </div>

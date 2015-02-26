@@ -37,10 +37,10 @@
               <li class="header-menu-item has-dropdown">
                 <a ui-sref="products({categoryId: null, productId: null})">Products</a>
                 <ul class="dropdown">
-                  <li class="header-menu-sub-item has-dropdown" ng-repeat="category in global.products.category">
+                  <li class="header-menu-sub-item has-dropdown" ng-repeat="category in _.values(objectMap.categories)">
                     <a ui-sref="products({categoryId: category.keyword, productId: null})">{{category.name}}</a>
                     <ul class="dropdown">
-                      <li class="header-menu-sub-item" ng-repeat="product in global.products[category.keyword].products">
+                      <li class="header-menu-sub-item" ng-repeat="product in _.values(objectMap.products)|filter:category.keyword">
                         <a ui-sref="products({categoryId: category.keyword, productId: null})">{{product.name}}</a>
                       </li>
                     </ul>
@@ -52,11 +52,11 @@
                 <a>All Categories</a>
                 <ul class="dropdown">
                   <div class="row header-categories">
-                    <div class="header-category-block" ng-repeat="category in global.products.category" ng-if="category.keyword !== 'knobs-and-handles' && category.keyword !== 'vibration-absorbers'" ui-sref="products({categoryId: category.keyword, productId: null})">
+                    <div class="header-category-block" ng-repeat="category in _.values(objectMap.categories)" ng-if="category.keyword !== 'knobs-and-handles' && category.keyword !== 'vibration-absorbers'" ui-sref="products({categoryId: category.keyword, productId: null})">
                       <b>{{category.name}}</b>
                       <br />
                       <ul>
-                        <li ng-repeat="product in global.products[category.keyword].products|limitTo: 3">
+                        <li ng-repeat="product in _.values(objectMap.products)|filter:category.keyword|limitTo: 3">
                           <i class="fa fa-angle-right"></i>&nbsp;{{product.name}}
                         </li>
                         <li ng-if="(global.products[category.keyword].products).length > 4">
@@ -150,6 +150,9 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
