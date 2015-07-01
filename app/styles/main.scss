@@ -5,15 +5,15 @@
 // Main SCSS file. Includes all other files.
 
 // Foundation
-@import "foundation/_foundation";
+@import "foundation/foundation";
 
 // Global
-@import "global/_typography";
-@import "global/_theme";
-@import "global/_global";
-@import "global/_header";
-@import "global/_footer";
+@import "global/typography";
+@import "global/theme";
+@import "global/global";
+@import "global/header";
+@import "global/footer";
 
 // Views
-@import "views/_home";
-@import "views/_products";
+@import "views/home";
+@import "views/products";

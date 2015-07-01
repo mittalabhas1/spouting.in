@@ -43,7 +43,7 @@ angular.module('spoutinginApp')
     };
 
     $interval(function(){
-      $scope.nextSlide()
+      $scope.nextSlide();
     }, 3000);
 
   }]);
