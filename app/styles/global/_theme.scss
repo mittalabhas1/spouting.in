@@ -7,13 +7,18 @@
 // Background Colors
 $bg-primary: #EEF9F6;
 $bg-footer: #232323;
-$bg-header: #20B2AA; //lightseagreen //rgb(32, 178, 170)
-$opacity1: rgba(32, 178, 170, 0.7);
-$opacity2: rgba(32, 178, 170, 0.5);
-$opacity3: rgba(32, 178, 170, 0.2);
+// $bg-header: #20B2AA; //lightseagreen //rgb(32, 178, 170)
+// $opacity1: rgba(32, 178, 170, 0.7);
+// $opacity2: rgba(32, 178, 170, 0.5);
+// $opacity3: rgba(32, 178, 170, 0.2);
+$bg-header: rgb(219, 43, 40);
+$opacity1: rgba(219, 43, 40, 0.7);
+$opacity2: rgba(219, 43, 40, 0.5);
+$opacity3: rgba(219, 43, 40, 0.2);
 
 // Font Colors
 $font-primary: $bg-footer;
+$header-color: #EEEEEE;
 $font-secondary: #e5e5e5;
 $font-footer: #4d5457;
 $orange: #F44B00;
