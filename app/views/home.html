@@ -17,11 +17,11 @@
       </div>
     </div>
     <ul class="home-categories">
-      <li ng-repeat="category in _.values(objectMap.categories) | limitTo:4" ui-sref="products({categoryId: category.keyword, productId: null})">
+      <li ng-repeat="category in _.values(objectMap.categories) | limitTo:8" ui-sref="products({categoryId: category.keyword, productId: null})">
         <div class="category-wrapper">
           <div class="home-category-container">
             <div class="img-container">
-              <img ng-src="images/category/{{category.keyword}}.jpg" alt="{{category.name}}">
+              <img ng-src="admin/static/images/categories/{{category.image}}" alt="{{category.name}}">
             </div>
             <div class="category-name-container">{{category.name}}</div>
           </div>
@@ -30,7 +30,7 @@
     </ul>
   </div>
 
-  <div class="home-wrapper">
+  <!-- <div class="home-wrapper">
     <div class="wrapper-head">
       <div class="heading-name">Spouting Showcase</div>
       <div class="browse-all">
@@ -70,6 +70,6 @@
         </div>
       </li>
     </ul>
-  </div>
+  </div> -->
 
 </div>

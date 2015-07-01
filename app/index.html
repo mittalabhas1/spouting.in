@@ -37,10 +37,10 @@
               <li class="header-menu-item has-dropdown">
                 <a ui-sref="products({categoryId: null, productId: null})">Products</a>
                 <ul class="dropdown">
-                  <li class="header-menu-sub-item has-dropdown" ng-repeat="category in _.values(objectMap.categories)">
+                  <li class="header-menu-sub-item has-dropdown active" ng-repeat="category in _.values(objectMap.categories)">
                     <a ui-sref="products({categoryId: category.keyword, productId: null})">{{category.name}}</a>
                     <ul class="dropdown">
-                      <li class="header-menu-sub-item" ng-repeat="product in _.values(objectMap.products)|filter:category.keyword">
+                      <li class="header-menu-sub-item active" ng-repeat="product in _.values(objectMap.products)|filter:category.keyword">
                         <a ui-sref="products({categoryId: category.keyword, productId: null})">{{product.name}}</a>
                       </li>
                     </ul>
@@ -56,7 +56,7 @@
                       <b>{{category.name}}</b>
                       <br />
                       <ul>
-                        <li ng-repeat="product in _.values(objectMap.products)|filter:category.keyword|limitTo: 3">
+                        <li class="header-menu-sub-item" ng-repeat="product in _.values(objectMap.products)|filter:category.keyword|limitTo: 3">
                           <i class="fa fa-angle-right"></i>&nbsp;{{product.name}}
                         </li>
                         <li ng-if="(global.products[category.keyword].products).length > 4">
@@ -67,11 +67,6 @@
                           </b>
                         </li>
                       </ul>
-                    </div>
-                    <div class="header-category-block">
-                      <b>Knobs and Handles </b><i class="fa fa-angle-double-right"></i>
-                      <br />
-                      <b>Vibration Absorbers </b><i class="fa fa-angle-double-right"></i>
                     </div>
                   </div>
                 </ul>
@@ -107,13 +102,13 @@
 
         <div class="small-2 columns text-center company-details social-icons">
           <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-          <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
-          <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+          <!-- <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+          <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a> -->
         </div>
 
         <div class="small-5 columns text-right company-details">
           <div class="copyright">&copy; 2014 M.M.Consultancy Pvt. Ltd.</div>
-          <div>Last updated: 07:57, Dec. 2, 2014</div>
+          <!-- <div>Last updated: 07:57, Dec. 2, 2014</div> -->
           <div class="company-phone"><span>Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank" class="company-details">Abhas Mittal</a><!--  &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a> --></div>
         </div>
       </div>
