@@ -20,16 +20,18 @@ angular.module('spoutinginApp')
 
     var objectMap = {
         categories: {},
-        products: {}
+        products: {},
+        settings: {}
     };
 
-    ref.on("value", function(snapshot){
+    ref.on('value', function(snapshot){
         parseData(snapshot.val());
     });
 
     var parseData = function(data){
         var categories = data.categories;
         var products = data.products;
+        objectMap.settings = data.settings;
 
         _.each(categories, function(category){
             objectMap.categories[category.keyword] = category;
@@ -40,7 +42,7 @@ angular.module('spoutinginApp')
         });
 
         $rootScope.objectMap = objectMap;
-        console.log(objectMap);
+        console.debug(objectMap);
         $rootScope._ = _;
     };
 

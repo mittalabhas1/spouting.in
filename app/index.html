@@ -27,7 +27,7 @@
       <nav class="top-bar" data-topbar role="navigation">
         <div class="small-4 columns text-right header-logo-container">
           <!-- <img src="images/logo.png" alt="Spouting.in" class="header-logo"> -->
-          <span class="header-logo">THE MILLING MEGA STORE</span>
+          <span class="header-logo">{{objectMap.settings.name}}</span>
         </div>
         <div class="small-8 columns header-menu-container">
           <section class="top-bar-section header-menu">
@@ -96,19 +96,19 @@
       <div class="footer-container">
         <div class="small-5 columns text-left company-details">
           <!-- <div class="company-name">M.M.Consultancy Pvt. Ltd.</div> -->
-          <div class="company-phone"><span class="contact-us-title">Contact Us:</span>&nbsp;+91-7272-401917, +91-99936-66903</div>
-          <div class="company-address">131 Industrial Area II, A.B.Road, Dewas (MP) - 455001</div>
-          <div class="company-email"><a href="mailto:spouting.in@gmail.com">spouting.in@gmail.com</a></div>
+          <div class="company-phone"><span class="contact-us-title">Contact Us:</span>&nbsp;{{objectMap.settings.phone}}</div>
+          <div class="company-address">{{objectMap.settings.address}}</div>
+          <div class="company-email"><a href="mailto:{{objectMap.settings.email}}">{{objectMap.settings.email}}</a></div>
         </div>
 
         <div class="small-2 columns text-center company-details social-icons">
-          <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-          <!-- <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
-          <a href="https://www.facebook.com/mmcdewas" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a> -->
+          <a href="https://www.facebook.com/{{objectMap.settings.fb_username}}" ng-if="!!objectMap.settings.fb_username" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="https://www.youtube.com/{{objectMap.settings.youtube_username}}" ng-if="!!objectMap.settings.youtube_username" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+          <a href="https://plus.google.com/{{objectMap.settings.gplus_username}}" ng-if="!!objectMap.settings.gplus_username" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
         </div>
 
         <div class="small-5 columns text-right company-details">
-          <div class="copyright">&copy; 2014 M.M.Consultancy Pvt. Ltd.</div>
+          <div class="copyright">&copy; {{objectMap.settings.copyright}}</div>
           <!-- <div>Last updated: 07:57, Dec. 2, 2014</div> -->
           <div class="company-phone"><span>Developed by</span>&nbsp;<a href="https://mittalabhas1.github.io" target="_blank" class="company-details">Abhas Mittal</a><!--  &amp; <a href="https://vamshedhar.github.io" target="_blank">Vamshedhar Reddy</a> --></div>
         </div>
