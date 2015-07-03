@@ -33,8 +33,8 @@
           <section class="top-bar-section header-menu">
           <!-- Right Nav Section -->
             <ul class="right header-menu-list">
-              <li class="header-menu-item active"><a href="#">Home</a></li>
-              <li class="header-menu-item active"><a href="#">About Us</a></li>
+              <li class="header-menu-item active"><a ui-sref="home">Home</a></li>
+              <li class="header-menu-item active"><a ui-sref="about">About Us</a></li>
               <li class="header-menu-item has-dropdown">
                 <a ui-sref="products({categoryId: null, productId: null})">Products</a>
                 <ul class="dropdown">
@@ -48,8 +48,9 @@
                   </li>
                 </ul>
               </li>
+              <li class="header-menu-item active"><a href="admin">Login</a></li>
               <!-- <li class="header-menu-item active"><a href="#">Contact Us</a></li> -->
-              <li class="header-menu-item has-dropdown">
+              <!-- <li class="header-menu-item has-dropdown">
                 <a>All Categories</a>
                 <ul class="dropdown">
                   <div class="row header-categories">
@@ -79,7 +80,7 @@
                   <li class="header-menu-sub-item active"><a href="http://truckloader.in/" target="_blank">Truckloader.in</a></li>
 
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </section>
         </div>
@@ -159,6 +160,7 @@
         <script src="scripts/controllers/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/products.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 </body>
 </html>

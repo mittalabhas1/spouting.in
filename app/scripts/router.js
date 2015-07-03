@@ -34,6 +34,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl'
     })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html',
+      controller: 'AboutCtrl'
+    })
     .state('products', {
       url: '/products/:categoryId/:productId',
       params: {
